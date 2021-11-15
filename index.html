@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3c031728c.js" crossorigin="anonymous"></script>
+    <title>SS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="b2"></div>
+        <div class="b2"></div>
+    </div>
+    <header>
+        <div class="logo">@sayak</div>
+        <div class="search">
+            <i class="fas fa-search fa-sm"></i>
+            <input placeholder="Search here B^2.."></input>
+        </div>
+    </header>
+    <main>
+        <h1>@_I_am_SS is a B^2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi praesentium nihil obcaecati animi. Maxime
+            saepe veniam quas molestiae, labore sapiente fuga animi nihil deleniti corrupti quaerat quia! Ex, deleniti
+            blanditiis!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae a sint culpa quisquam tempore dolorem
+            iusto facere, illum consequuntur rerum temporibus dicta recusandae velit accusamus placeat qui vel totam
+            harum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi repellat reprehenderit possimus
+            praesentium, aperiam tempora atque voluptas inventore doloribus itaque necessitatibus sed ratione corrupti
+            perspiciatis est iusto officiis hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus ratione maxime, veniam
+            pariatur nostrum aliquid hic, eligendi accusamus, cum soluta rerum. Iure ipsam similique cupiditate debitis
+            quidem, natus alias.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia consectetur neque asperiores
+            reiciendis eius odit at modi omnis! Nulla, fuga optio! Labore eius dignissimos vel pariatur aliquid unde
+            expedita porro vitae.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum vero qui, aliquid sunt soluta
+            quidem corporis at quos voluptatum! Possimus ullam eligendi, quo aut suscipit reiciendis officia, rerum ut
+            pariatur itaque id facere sequi omnis magni similique et sit unde expedita ea quis eaque rem doloremque
+            nostrum! Nemo, eum! Ea exercitationem neque assumenda a? Accusantium, facere distinctio! Corporis voluptatum
+            totam veritatis iste, aspernatur obcaecati praesentium, quisquam inventore optio laborum expedita asperiores
+            voluptate commodi! Deserunt sunt tenetur iste velit, quis animi minima eum maxime nostrum! Expedita hic
+            laborum adipisci ipsum sequi, aliquid sit, unde blanditiis praesentium asperiores at magni excepturi placeat
+            iure repellat exercitationem id nulla debitis quia labore temporibus et voluptatibus! Suscipit at, et iusto
+            maiores laudantium corporis velit nam saepe, quam labore eum vel expedita debitis?</p>
+    </main>
+    <footer>
+        <p>&#169; @sayak __ 15November2021</p>
+        <br/><br/>
+        <p style="font-size: 1rem;">
+            <a href="mailto:sayakdas2k1@gmail.com">sayakdas2k1@gmail.com</a>
+        </p>
+    </footer>
+</body>
+<style>
+    main,
+    body,
+    html,
+    div,
+    p {
+        margin: 0px;
+        padding: 0px;
+        --bk-color : #020202d3;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+    }
+    a::before{
+        position: absolute;
+        height: 2px;
+        width: 0px;
+        content: '';
+        top: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #fff;     
+    }
+    a:hover::before{
+        width: inherit;
+    }
+    a:visited{
+        color: #fff
+    }
+    main {
+        display: flex;
+        color: #020202;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 100px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+        top: 10px;
+    }
+    main > p,
+    main > h1{
+        width: 95vw;
+        max-width: 700px;
+        font-style: italic;
+        text-align: justify;
+    }
+    main > h1{
+        text-align: center;
+    }
+    .container {
+        --time: 12s;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .b2 {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        animation-name: animation;
+        animation-duration: var(--time);
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background-image: url("./SSSS.png");
+        opacity: 0.69;
+        background-size: 500px 100px;
+    }
+
+    .b2:nth-child(1) {
+        top: -100vh;
+        animation-delay: calc(var(--time)/2);
+    }
+
+    footer {
+        height: 200px;
+        background-color: var(--bk-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+        flex-direction: column;
+    }
+
+    @keyframes animation {
+        0% {
+            top: -100vh;
+        }
+
+        100% {
+            top: 100vh;
+        }
+    }
+    header{
+        position: sticky;
+        height: 70px;
+        background: var(--bk-color);
+        width: 100vw;
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    header > .search {
+        width: 50vw;
+        padding-left: 10px;
+        background-color: rgba(255, 255, 255, 0.623);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+    .search > input{
+        width: calc(100% - 20px);
+        height: inherit;
+        background-color: transparent;
+        color: var(--bk-color);
+        box-shadow: 0px;
+        border: 0px;
+        outline: none;
+        font-size: 1.5rem;
+    }
+    @media only screen and (max-width: 600px){
+        .logo{
+            display: none;
+        }
+        header > .search{
+            width: 80vw;
+        }
+    }
+</style>
+
+</html>
